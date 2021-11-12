@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://unpkg.com/element-plus/dist/index.css">
     <!-- import JavaScript -->
     <script src="https://unpkg.com/element-plus"></script>
-    <title>Element Plus demo</title>
+    <title>主页</title>
   </head>
   <body>
     <div id="app">
@@ -18,9 +18,14 @@
       const App = {
         data() {
           return {
-            message: "Hello Element Plus",
+            message: "click me",
           };
         },
+        methods:{
+          sayHello(){
+            this.message="hello"
+          }
+        }
       };
       const app = Vue.createApp(App);
       app.use(ElementPlus);

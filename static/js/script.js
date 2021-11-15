@@ -1,6 +1,6 @@
 document.getElementById("hover").addEventListener("mouseenter", function () {
   document.getElementById("draw").classList.add("animate");
-  setInterval(playmusic(),3000); 
+  setInterval(playmusic(),1000); 
 
 });
 

@@ -1,27 +1,10 @@
-<!DOCTYPE html>
-<html lang="en" >
-<head>
-<meta charset="UTF-8">
-<title>主页</title>
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 
-<link rel="stylesheet" href="static/css/reset.min.css">
-<link rel="stylesheet" href="static/css/style.css">
-	
-<link rel="icon" type="image/x-ico" href="favicon.ico"/>
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-
-
-
-</head>
-<body>
-<audio style="display: none"  id="music">
-  <source src="http://music.163.com/song/media/outer/url?id=1430319727.mp3" 
-		  autoplay
-		  loop
-		  type="audio/mpeg">
-</audio>
-<div id="draw">
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 250 1000 563">
+  <svg xmlns="http://www.w3.org/2000/svg" 
+       xmlns:xlink="http://www.w3.org/1999/xlink" 
+       viewBox="0 250 1000 563">
     <defs>
       <style>
         .cls-1,
@@ -751,16 +734,14 @@
     <g id="hover">
       <circle class="cls-21" cx="500" cy="558.89" r="56.04" />
     </g>
+    <script type="text/ecmascript">
+      document.getElementById("hover").addEventListener("mouseenter", function () {
+        document.getElementById("draw").classList.add("animate");
+      });
+
+      document.getElementById("hover").addEventListener("mouseleave", function () {
+        document.getElementById("draw").classList.remove("animate");
+      });
+
+    </script>    
   </svg>
-</div>
-
-<div id="container">
-  <h1>欢迎来到我的城堡 </h1>
-</div>
-
-<script  src="static/js/script.js"></script>
-
-
-
-</body>
-</html>

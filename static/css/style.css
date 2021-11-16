@@ -92,7 +92,7 @@ body {
 #draw.animate .cloud {
   opacity: 0.15 !important;
 }
-
+/*********************************************/
 #container{
   position:absolute;
   margin:0 auto; 
@@ -107,4 +107,7 @@ body {
    
   padding: 0;
   z-index: 100;
+  text-align: center;
 }
+
+ 

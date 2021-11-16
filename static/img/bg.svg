@@ -734,14 +734,4 @@
     <g id="hover">
       <circle class="cls-21" cx="500" cy="558.89" r="56.04" />
     </g>
-    <script type="text/ecmascript">
-      document.getElementById("hover").addEventListener("mouseenter", function () {
-        document.getElementById("draw").classList.add("animate");
-      });
-
-      document.getElementById("hover").addEventListener("mouseleave", function () {
-        document.getElementById("draw").classList.remove("animate");
-      });
-
-    </script>    
   </svg>

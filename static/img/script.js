@@ -11,7 +11,7 @@
 window.onload = function () {
 
   var a=document.getElementById('svgObject');
-  var svgdocment=a.contentDocument();
+  var svgdocment=a.contentDocument;
   //var svgdocment = document.getElementById('svgembed').getSVGDocument();
 
   svgdocment.getElementById("hover").addEventListener("mouseenter", function () {

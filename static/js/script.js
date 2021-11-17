@@ -1,4 +1,3 @@
- 
 function playmusic(){
   let audio = document.getElementById("music");
   if (audio.paused){
